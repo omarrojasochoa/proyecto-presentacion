@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Portfalio</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class="container container-nav">
+        <a
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+          href="#"
+        >
+          <span href="#" class="letter-peruvian text-uppercase fw-lighter ms-2"
+            >Omar Rojas</span
+          >
+        </a>
+        <!--iconos: compra y notif..  -->
+        <div class="order-lg-2 nav-btns">
+          <button
+            href="https://github.com/omarrojasochoa"
+            target="_blank"
+            type="button"
+            class="btn position-relative"
+          >
+            <i class="fa-brands fa-github"></i>
+          </button>
+          <button
+            href="https://www.instagram.com/omar.ro30/"
+            target="_blank"
+            type="button"
+            class="btn position-relative"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </button>
+          <button
+            href="https://www.instagram.com/omar.ro30/"
+            target="_blank"
+            type="button"
+            class="btn position-relative"
+          >
+            <i class="fab fa-instagram"></i>
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#about"
+                >Sobre mí</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#estudios"
+                >Estudios</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#familia"
+                >Familia</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#amigos"
+                >Amistades</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#contact"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--====================================-->
+    <!--====================================-->
+    <!-- header -->
+    <header
+      id="header"
+      class="vh-100 carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2500"
+      style="padding-top: 104px"
+    >
+      <div class="container h-100 d-flex carousel-inner align-items-center">
+        <div class="carousel-item active">
+          <h2 class="text-capitalize text-white"><i>¡BIENVENIDO!</i></h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            <i>ESTA ES MI PRESENTACIÓN</i>
+          </h1>
+          <a href="#about" class="btn mt-3 text-uppercase">
+            Conocer más de Mi</a
+          >
+        </div>
+        <div class="carousel-item">
+          <h2 class="text-capitalize text-white"><i>¡Scrollea!</i></h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            <i>Developer en camino</i>
+          </h1>
+          <a href="#about" class="btn mt-3 text-uppercase">
+            Conocer más de Mi</a
+          >
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#header"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#header"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </header>
+
+    <!--====================================-->
+    <!-- About-->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row gy-lg-5 align-items-center">
+          <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+            <div class="title pt-3 pb-5">
+              <h2 class="position-relative d-inline-block ms-4">Sobre Mí</h2>
+            </div>
+            <p class="lead text-muted">"Apasionado en lo que hace."</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              aliquid accusamus unde, voluptatum atque odit, perferendis
+              accusantium saepe culpa mollitia sed dignissimos modi nostrum
+              consequatur qui? Assumenda nulla modi eos. Lorem, ipsum dolor sit
+              amet consectetur adipisicing elit. Nostrum consequuntur facere ad
+              voluptates aliquam doloribus soluta, obcaecati aperiam? Sapiente
+              soluta itaque commodi quos suscipit laborum laudantium velit qui
+              neque sit.
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-0">
+            <img src="images/yo2.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================================-->
+    <!-- Estudios-->
+    <section id="estudios" class="py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">Mis Estudios</h2>
+        </div>
+
+        <div class="row g-3 text-center">
+          <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+            <img src="images/yo.jpg" alt="" />
+            <div class="card-body px-0">
+              <h4 class="card-title">UNAC - Ing. de Alimentos</h4>
+              <p class="card-text mt-3 text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                voluptates aliquam delectus nihil nobis quis.
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+            <img src="./images/yo.jpg" alt="" />
+            <div class="card-body px-0">
+              <h4 class="card-title">UNMSM - Investigación Operativa</h4>
+              <p class="card-text mt-3 text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                voluptates aliquam delectus nihil nobis quis.
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+            <img src="./images/yo.jpg" alt="" />
+            <div class="card-body px-0">
+              <h4 class="card-title">Desarrollo Full Stack</h4>
+              <p class="card-text mt-3 text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                voluptates aliquam delectus nihil nobis quis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================================-->
+    <!-- Familia -->
+    <section class="page-section bg-light" id="familia">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Familia</h2>
+          <h3 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="images/yo.jpg"
+                alt="..."
+              />
+              <h4>Ernesto Rojas</h4>
+              <p class="text-muted">Ing. Electronico</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Parveen Anand Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Parveen Anand Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Parveen Anand LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="images/yo.jpg"
+                alt="..."
+              />
+              <h4>Claudia Ochoa</h4>
+              <p class="text-muted">Lic. Administración</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="images/yo.jpg"
+                alt="..."
+              />
+              <h4>Dina Rojas</h4>
+              <p class="text-muted">Ing. Agroindustrial</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+              eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam
+              corporis ea, alias ut unde.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================================-->
+    <!-- Amistades-->
+    <section class="page-section bg-light" id="amigos">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Amistades</h2>
+          <h3 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="images/yo.jpg"
+                alt="..."
+              />
+              <h4>Williams Azabache</h4>
+              <p class="text-muted">Programador Sr.</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Parveen Anand Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Parveen Anand Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Parveen Anand LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="images/amigo_1.png"
+                alt="..."
+              />
+              <h4>Diego Cerna</h4>
+              <p class="text-muted">Empresario</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="images/amigo_2.png"
+                alt="..."
+              />
+              <h4>Mario Gutierrez</h4>
+              <p class="text-muted">CEO - Fluyez</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+              eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam
+              corporis ea, alias ut unde.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--====================================-->
+    <!-- newsletter + form -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="title text-center pt-3 pb-5">
+            <h2 class="position-relative d-inline-block ms-4 text-white">
+              Déjame un mensaje!
+            </h2>
+          </div>
+          <p class="text-center text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde
+            nesciunt aperiam dolorum, possimus nulla rem impedit inventore, quod
+            eaque ullam
+          </p>
+
+          <div id="formulario">
+            <form
+              autocomplete="off"
+              class="contact-form"
+              action="https://formsubmit.co/orojas3095@gmail.com"
+              method="POST"
+              target="_blank"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Nombre.."
+                title="Nombre solo acepta letras y espacion en blanco"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                required
+              />
+              <!--pattern sirve para colocar la expresion regular para la validacion-->
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo Electronico.."
+                title="Email Incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                required
+              />
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Asunto.."
+                title="El Asunto es requerido."
+                required
+              />
+
+              <textarea
+                name="comments"
+                cols="50"
+                rows="8"
+                placeholder="Escribe tus comentarios.."
+                title="Tu comentario no debe exceder los 255 caracteres"
+                data-pattern="^.{1,255}$"
+                required
+              ></textarea>
+              <input class="btn-primary" type="submit" value="Enviar" />
+              <div class="contact-form-loader none">
+                <img src="recourse/Reload-1s-200px.svg" alt="Cargando" />
+              </div>
+              <div class="contact-form-response none">
+                <a>Los datos han sido enviados</a>
+              </div>
+            </form>
+          </div>
+          <!--==============-->
+        </div>
+      </div>
+    </section>
+    <!--====================================-->
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <h5
+              class="text-uppercase text-decoration-none brand text-white"
+              href="#"
+            >
+              ¡Gracias por <br />
+              tu visita!
+            </h5>
+            <p class="text-white text-muted mt-3 me-5">
+              PeruvianShop ofrece una opción de productos diferentes, especiales
+              para el cuidado personal. Somos una empresa peruana comprometida
+              con el medio ambiente.
+            </p>
+          </div>
+
+          <div id="informacion" class="col-md-6 col-lg-3">
+            <h5 class="fw-light">Información</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a
+                  href="#presentacion"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Presentación
+                </a>
+              </li>
+              <li class="my-3">
+                <a
+                  href="#about"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Estudios
+                </a>
+              </li>
+              <li class="my-3">
+                <a
+                  href="#familia"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Familia
+                </a>
+              </li>
+              <li class="my-3">
+                <a
+                  href="#amigos"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Amistades
+                </a>
+              </li>
+              <li class="my-3">
+                <a
+                  href="#contact"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Contáctame</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light">
+                Av. Sergio Bernales 189 <br />Surquillo, Lima - Perú.
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light"> orojas3095@gmail.com </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light"> +51 974 604 319 </span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Sígueme en:</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a
+                    href="https://www.facebook.com/omarro30/"
+                    target="_blank"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/omar.ro30/"
+                    target="_blank"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/omar.ro30/"
+                    target="_blank"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/omarrojasochoa"
+                    target="_blank"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./codigo/codigo.js"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/2f2ef926c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS PROPIO -->
+    <script src="validaciones.js"></script>
+  </body>
+</html>
